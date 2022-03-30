@@ -1,0 +1,73 @@
+:root {
+    --color1: rgb(255, 0, 221);
+    --color2: rgb(0, 17, 255);
+    --color3: grey;
+}
+
+header {
+    position: relative;
+    margin-top: -96px;
+    padding: 102px;
+    text-align: center;
+}
+
+.borderBox {
+    position:absolute;
+    flex: 0 0 10%;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color:transparent;
+    border: dashed;
+}
+
+.mainCard {
+    position: relative;
+    background-color: var(--color1);
+    color: var(--color2);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    border: solid black;
+    flex: 0 0 20%;
+    background: linear-gradient(#e664d5, #9198e5);
+}
+
+.mainCards {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    position: absolute;
+    top: -65px;
+    margin-left: 50px;
+    text-align: center;
+    border-radius: 5px;;
+    border: solid white;
+    color: var(--color1)
+    padding 5px;
+    flex: 0 0 20%;
+}
+
+body {
+    background-color: rgb(92, 86, 143);
+    color: var(--color1)
+}
+
+pre {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction:column;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    header {
+        flex-direction:column;
+    }
+}

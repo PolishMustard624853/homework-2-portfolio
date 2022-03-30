@@ -1,0 +1,175 @@
+:root {
+    --color1: orange;
+    --color2: purple;
+}
+
+body {
+    background-color: rgb(44, 0, 44);
+}
+
+header {
+    /* display: flex; */
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(/pexels-john-petalcurin-2115257.jpg);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1vw 1vw;
+    font-size: 2rem;
+    color: var(--color1);
+
+}
+
+span {
+    color: var(--color2)
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    border-bottom: 2rem;
+}
+
+header img {
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    margin-left: 450px;
+    float: right;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+li a:hover {
+    text-shadow: 2px 2px 10px #dfb600;
+    filter: dropshadow(color=#ff9900, offx=2, offy=2);
+}
+
+header nav ul li {
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header:hover {
+    transition: .4s;
+    color: var(--color1);
+}
+
+#contact {
+    padding-top: 15px;
+    margin-right: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+a {
+    color: var(--color2);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#aboutMe {
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    background-image: url(./pexels-andy-vu-3244513.jpg);
+    background-size: cover;
+    color: var(--color2);
+    margin: 5rem;
+    padding: 9rem;
+    border-radius: 15px;
+    border: solid var(--color1);
+    flex: 0 0 20%;
+}
+
+.previousWork {
+    position: relative;
+    font-size: xx-large;
+    background-image: url(./pexels-pixabay-39561.jpg);
+    background-size: cover;
+    color: var(--color2);
+    margin: 5rem;
+    padding: 10rem;
+    border-radius: 12px;
+    border: solid var(--color1);
+    flex: 0 0 20%;
+}
+
+#contactMe {
+    position: relative;
+    background-image: url(./pexels-виктор-куликов-8601965.jpg);
+    background-size: cover;
+    color: var(--color2);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    border: solid var(--color1);
+    flex: 0 0 20%;
+
+}
+
+#resume {
+    position: relative;
+    background-image: url(./pexels-alex-andrews-816608.jpg);
+    background-size: cover;
+    color: var(--color2);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    border: solid var(--color1);
+    flex: 0 0 20%;
+}
+
+#contactMe:hover {
+    transition: .3s;
+    color: var(--color1);
+}
+
+div h1:hover {
+    background-color: cyan;
+}
+
+h2:hover {
+    transition: .3s;
+    color: var(--color1);
+}
+
+footer {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    color: var(--color1)
+}
+
+@media screen and (max-width: 768px){
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 450px){
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
